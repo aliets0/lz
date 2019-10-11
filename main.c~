@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <dirent.h>
+
+int main(int *argc, char *argv[]){
+
+  struct dirent *de;
+
+  int c;
+  
+  DIR *dr;
+
+  if (*argv[1] == '-l'){
+     dr = opendir("/usr/bin/"); 
+   }else {
+     dr = opendir(argv[1]);
+   }
+
+   if (dr == NULL)
+      {
+	printf("No directory");
+	return 0; 
+      }
+  while ((de = readdir(dr)) != NULL){
+    c++;
+    printf("%d %s\n", c, de->d_name);
+  }
+  
+  closedir(dr);
+  
+  return 0;
+}
