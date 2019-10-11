@@ -22,7 +22,7 @@ int main(int *argc, char *argv[]){
     {
       // CHANGE FILE PATH HERE
       //           VVVVVVVVVVVVVVVVVVVVVVVVV
-      dr = opendir("/home/aliets/Downloads/");
+      dr = opendir("/home/sysname/Downloads/");
     } else if (strcmp(argv[1], "-h") == 0)
     {
       printf("___FLAGS___\n");
