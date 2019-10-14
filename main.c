@@ -27,15 +27,14 @@ int main(int *argc, char *argv[]){
  
       dr = opendir("/home/aliets/Downloads/");
       // HELP FLAG
-    } else if (CMP(argv[1], "-h") == 0)
-
-      dr = opendir("/home/sysname/Downloads/");
-    } else if (strcmp(argv[1], "-h") == 0)
- 
-    {
-      printf("___FLAGS___\n");
+    } else if (CMP(argv[1], "-h") == 0) 
+	  
+    } 
+ 	printf("___FLAGS___\n");
       printf("-b goes to bin\n-d goes to downloads\n-h for help");
       printf("change the paths in main.c to get flags to work!");
+    {
+      
       // OPEN DIRECTORY YOU INPUT
     } else
     {
