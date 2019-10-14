@@ -24,14 +24,14 @@ int main(int *argc, char *argv[]){
     {
       // CHANGE FILE PATH HERE
       //           VVVVVVVVVVVVVVVVVVVVVVVVV
-<<<<<<< HEAD
+ 
       dr = opendir("/home/aliets/Downloads/");
       // HELP FLAG
     } else if (CMP(argv[1], "-h") == 0)
-=======
+
       dr = opendir("/home/sysname/Downloads/");
     } else if (strcmp(argv[1], "-h") == 0)
->>>>>>> 8a476dd58cd9453efb78a3b0374c4ef14cc4271a
+ 
     {
       printf("___FLAGS___\n");
       printf("-b goes to bin\n-d goes to downloads\n-h for help");
