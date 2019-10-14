@@ -4,7 +4,7 @@
 #include <dirent.h>
 #define CMP strcmp
 
-int main(int *argc, char *argv[]){
+int main(int argc, char *argv[]){
 
   struct dirent *de;
 
