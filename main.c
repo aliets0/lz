@@ -24,23 +24,21 @@ int main(int *argc, char *argv[]){
     {
       // CHANGE FILE PATH HERE
       //           VVVVVVVVVVVVVVVVVVVVVVVVV
- 
       dr = opendir("/home/aliets/Downloads/");
       // HELP FLAG
-    } else if (CMP(argv[1], "-h") == 0) 
-	  
-    } 
- 	printf("___FLAGS___\n");
+    } else if (CMP(argv[1], "-h") == 0)
+    
+    {
+      printf("\033[1;32m");
+      printf("___FLAGS___\n");
       printf("-b goes to bin\n-d goes to downloads\n-h for help");
       printf("change the paths in main.c to get flags to work!");
-    {
-      
       // OPEN DIRECTORY YOU INPUT
     } else
-    {
-      dr = opendir(argv[1]);
-    }
-  // IF DIRECTORY IS INVALID PRINT "No directory"
+  {
+    dr = opendir(argv[1]);
+  }
+// IF DIRECTORY IS INVALID PRINT "No directory"
   if (dr == NULL)
 	{
 	  printf("No directory");
